@@ -7,85 +7,116 @@
     <meta name="keywords" content="Roman, cv, resume">
     <meta name="description" content="Это сайт - резюме Романа Гнелицкого">
     <title>Roman Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="imgs/Roman.jpg" alt="Роман Гнелицкий" width="200">
-    <h1>Роман Гнелицкий</h1>
-    <p>О себе (выделить ключевые слова жирным strong)</p>
-    <p>Чем я люблю заниматься (выделить ключевые слова курсивом em)</p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://www.instagram.com/invites/contact/?i=xuiq6910oe8e&utm_content=dmvcvx6" target="_blank">Инстаграмм</a>
-    |
-    <a href="https://vk.com/roman.gnelitsky" target="_blank">Вконтакте</a>
-    |
-    <a href="https://www.youtube.com/channel/UC2cp__Lw77kJKlwbKDZ8h1w" target="_blank">YouTube</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Хобби 1</li>
-        <li>Хобби 2</li>
-        <li>Хобби 3</li>
-        <li>Хобби 4</li>
-    </ol>
+    <div class="container">
+        <div class="info"><img src="imgs/Roman.jpg" alt="Роман Гнелицкий" class="avatar" >
+            <div class="info-text">
+                <h1>Роман Гнелицкий</h1>
 
-    <h2>Опыт работы</h2>
+                <p><strong>Столер, плотник.</strong></p>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ЗАО "Искрателеком"</td>
-                <td>Сервисный Инженер</td>
-                <td>2012-2014</td>
-            </tr>
-            <tr>
-                <td>ЗАО "Искрателеком"</td>
-                <td>Заместитель руководителя</td>
-                <td>2014-2016</td>
-            </tr>
-            <tr>
-                <td>ВСК "Домовой"</td>
-                <td>Плотник</td>
-                <td>2016-2019</td>
-            </tr>
-            <tr>
-                <td>ВСК "Домовой"</td>
-                <td>Инженер</td>
-                <td>2019-2021</td>
-            </tr>
-            <tr>
-                <td>Самозанятый</td>
-                <td>Столер</td>
-                <td>2021-2022</td>
-            </tr>
-        </tbody>
-    </table>
+                <p><em>Занимаюсь изготовлением и установкой деревянных межэтажных лестниц в жилых домах. Решил попробовать себя в IT. </em></p>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <h4>Список социальных сетей:</h4>
+
+                <a href="https://www.instagram.com/invites/contact/?i=xuiq6910oe8e&utm_content=dmvcvx6" target="_blank">Инстаграмм</a>
+                |
+                <a href="https://vk.com/roman.gnelitsky" target="_blank">Вконтакте</a>
+                |
+                <a href="https://www.youtube.com/channel/UC2cp__Lw77kJKlwbKDZ8h1w" target="_blank">YouTube</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Изготовление столярных изделий</li>
+                <li>Спорт</li>
+                <li>Книги</li>
+                <li>Программирование</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-           
+        <div class="card bg-red">
+        <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>ЗАО "Искрателеком"</td>
+                        <td>Сервисный Инженер</td>
+                        <td>2012-2014</td>
+                    </tr>
+                    <tr>
+                        <td>ЗАО "Искрателеком"</td>
+                        <td>Заместитель руководителя</td>
+                        <td>2014-2016</td>
+                    </tr>
+                    <tr>
+                        <td>ВСК "Домовой"</td>
+                        <td>Плотник</td>
+                        <td>2016-2019</td>
+                    </tr>
+                    <tr>
+                        <td>ВСК "Домовой"</td>
+                        <td>Инженер</td>
+                        <td>2019-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Самозанятый</td>
+                        <td>Столер</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <button type="submit">Отправить!</button>
-    </form>
+        <div class="card bg-yellow">
+            <h2>Мои курсы</h2>
+
+            <ul class="link-list">
+                <li>
+                    <a href="https://vladilen.ru/junior" target="blank">Получение профессии Frontend Разработчика</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Все курсы</a>
+                </li>
+            </ul>
+
+        </div>
+
+        
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            
+            </div>
+
+            <button class="btn" type="submit">Отправить!</button>
+        </form>
+    </div>
 </body>
 </html>
